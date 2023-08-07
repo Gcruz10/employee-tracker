@@ -9,6 +9,10 @@ async function start() {
             'View all Departments',
             'View all Roles',
             'View all Employees',
+            'Add Department',
+            'Add Roles',
+            'Add Employee',
+            'Update Employee Role',
             'Quit'
         ]
     })
@@ -22,6 +26,19 @@ async function start() {
                 case 'View all Employees':
                     viewEmployees()
                     break
+                    case 'Add Department':
+                        addDepartment()
+                        break
+                        case 'Add Roles':
+                            addRoles()
+                            break
+                            case 'Add Employee':
+                                addEmployee()
+                                break
+                                case 'Update Employee Role':
+                                updateRole()
+                                break
+
                     default:
                         console.log('GoodBye')
                         process.exit(0)
